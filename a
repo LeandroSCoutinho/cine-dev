@@ -1,0 +1,18 @@
+[33mcommit 7ebc448c85794b4b848ea0cc4c6067d5d085ad18[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: 5b0bafb c36e790
+Author: Leandro Coutinho <franciscoleandrosilvacoutinho@gmail.com>
+Date:   Sat Nov 26 10:16:33 2022 -0300
+
+    Conflicts resolved
+
+[33mcommit 5b0bafb6a4177eb99573b6bf795b568fc3602276[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Leandro Coutinho <franciscoleandrosilvacoutinho@gmail.com>
+Date:   Fri Nov 25 23:55:20 2022 -0300
+
+    Initial structure
+
+[33mcommit c36e79021bfbc149d98d3a2cdc23ff6999b00a85[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Leandro Coutinho <franciscoleandrosilvacoutinho@gmail.com>
+Date:   Fri Nov 25 23:37:12 2022 -0300
+
+    Initial commit
