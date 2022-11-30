@@ -10,6 +10,7 @@ function Movies(){
     const navigate = useNavigate();
     const [ movie, setMovie ] = useState({});
     const [loading, setLoading] = useState(true);
+    
 
     useEffect(() => {
         async function loadMovie(){
@@ -33,6 +34,24 @@ function Movies(){
         }
     },[navigate,id]);
 
+    function saveMovie(){
+        const listMovies = localStorage.getItem("@favoriteMovies");
+
+        let  savedMovie = JSON.parse(listMovies) || [];
+
+        const hasMovie = savedMovie.some((favoriteMovie) => favoriteMovie.id === movie.id );
+
+        if(hasMovie){
+            alert("Este filme já existe na sua lista de favoritos!");
+            return;
+        }
+
+        savedMovie.push(movie);
+        localStorage.setItem("@favoriteMovies",JSON.stringify(savedMovie));
+
+        alert("Filme salvo com sucesso!");
+    }
+
    if(loading){
       return(
         <div className="movie-info">
@@ -52,7 +71,11 @@ function Movies(){
             <strong>Avaliação: { movie.vote_average } / 10 </strong>
 
             <div className="button-group">
-                <button>Salvar</button>
+                <button
+                onClick={saveMovie}
+                >
+                 Salvar
+                </button>
                 <button>
                     <a
                      target="blanck"
