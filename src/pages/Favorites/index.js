@@ -7,14 +7,28 @@ function Favorites(){
     const [ movie, setMovie ] = useState([]);
 
     useEffect(() => {
-        const movieList = JSON.parse(localStorage.getItem("@favoriteMovies") || []);
 
-        setMovie(movieList);    
+        const movieList = localStorage.getItem("@favoriteMovies");
+        setMovie(JSON.parse(movieList) || []);  
+
     },[]);
+
+    function deleteMovie(id){
+        const filterMovie = movie.filter((item) => {
+            return (item.id !== id);
+        });
+
+        setMovie(filterMovie);
+        localStorage.setItem("@favoriteMovies",JSON.stringify(filterMovie))
+
+    }
 
     return(
         <div className="movies-list">
             <h1>Meus favoritos</h1>
+
+            {movie.length === 0 && <span>Você não possui nenhum filme salvo :( </span>}
+
             <ul>
                 {movie.map((movie) =>{
                     return(
@@ -23,7 +37,7 @@ function Favorites(){
 
                             <div>
                                 <Link to={`/movies/${movie.id}`}>Ver detalhes</Link>
-                                <button>Excluir</button>
+                                <button onClick={() =>{deleteMovie(movie.id)}}>Excluir</button>
                             </div>
                         </li>
                     );
