@@ -30,10 +30,10 @@
 .movie-info strong{
     margin: 15px 0;
 }
-.button-group button {
+.button-group button{
     width: 150px;
     height: 50px;
-    margin-right: 12px;
+    margin-right: 15px;
     margin-top: 14px;
     margin-left: 0;
     font-size: 20px;
@@ -51,6 +51,16 @@
 
 .button-group a{
     text-decoration: none;
-    color: #000;  
+    color: #000; 
+
 }
+
+.button-group a:hover{
+    background-color: #1b1a1a;
+    color: #fabf53;
+    background-color: #fff;
+ 
+}
+
+
 

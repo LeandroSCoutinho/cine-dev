@@ -77,15 +77,16 @@ function Movies(){
                 >
                  Salvar
                 </button>
-                <button>
-                    <a
+                <a
                      target="blanck"
                      rel="external"
                      href={`https://youtube.com/results?search_query=${movie.title} trailer`}
                      >
+                        <button>
                         Trailer
-                    </a>
-                </button>
+                        </button>
+                </a>
+                
             </div>
         </div>
     );
