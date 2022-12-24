@@ -4,10 +4,10 @@ Projeto onde a principal funcionalidade é criar uma lista de filmes favoritos, 
 
 #Tecnologias utilizadas
 
-* HTML
-* CSS
-* JAVASCRIPT
-* REACTJS
+* [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element)
+* [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+* [JAVASCRIPT](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript)
+* [REACTJS](https://pt-br.reactjs.org)
 * [API TMDB](<https://www.themoviedb.org/documentation/api>)
 
 #Como instalar o projeto
