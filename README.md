@@ -8,6 +8,7 @@ Projeto onde a principal funcionalidade é criar uma lista de filmes favoritos, 
 * CSS
 * JAVASCRIPT
 * REACTJS
+* [API TMDB](<https://www.themoviedb.org/documentation/api>)
 
 #Como instalar o projeto
 
